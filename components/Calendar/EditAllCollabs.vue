@@ -146,7 +146,6 @@
 </template>
 
 <script>
-import EditCollabVue from './EditCollab.vue'
 const dayjs = require('dayjs')
 require('dayjs/locale/fr')
 let weekOfYear = require('dayjs/plugin/weekOfYear')

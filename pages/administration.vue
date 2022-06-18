@@ -203,7 +203,7 @@ export default {
         })
       }
 
-      // vérifie si le collaborateur à une date de sortie et fixe un boolean
+      // vérifie si le collaborateur à une date de sortie on fixe un boolean
       if (!this.userSelect.endAt) {
         this.setBooleanEndAt(false)
         Object.assign(this.userSelect, {enabledEndAt: false});

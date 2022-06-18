@@ -41,6 +41,7 @@ export default {
     });
     this.setUser(userRes)
 
+    // l'utilisateur n'est pas encore validé, redirection + notif
     if (!userRes.name || !userRes.firstname || !userRes.role || !userRes.pole) {
       this.$router.push(`/`)
 

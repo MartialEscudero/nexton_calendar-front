@@ -13,6 +13,7 @@ export const mutations = {
     state.user = args
   },
   
+  // liste de tous les Collaborateurs
   setUsers(state, args) {
     state.users = []
     args.forEach(element => {
@@ -30,6 +31,8 @@ export const mutations = {
     state.users.sort(function(a,b){return a.blocked-b.blocked});
   },
 
+
+  // liste de tous les projets + liste des projets en cours + liste des projets terminés
   setProjectsList(state, args) {
     state.projectsList = []
     state.projectsListCurrent = []
@@ -51,6 +54,7 @@ export const mutations = {
     });
   },
 
+  // liste de tous les poles
   setPoles(state, args) {
     state.poles = []
 
